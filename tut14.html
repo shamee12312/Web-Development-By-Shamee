@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- there are 4 types of selector in css
+    1.element selector
+    2.id seleector
+    3.class selecotr 
+    4.grouping selector -->
+    <style>
+        /* ELEMENT SELECTOR */
+        p{
+            border: 2px solid red;
+        }
+
+        /* ID SELECTOR */
+        #redelement{
+            color: red;
+            
+        }
+        #blueelement{   
+            color: blue;
+        }
+        #greenelement{
+            color: green;
+        }
+        #purpleelement{
+            color: purple;
+        }
+        /* CLASS SELECTOR */
+        .aqua{
+            color: aqua;
+            
+        }
+        .bgbrown{
+            background-color: brown;
+            /* color: black; */
+        }
+        /* GORUPING SELECTOR */
+        footer, span{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <!-- this will be blue too -->
+    <p id="blueelement">This is a simple paragraph toh represent css selectors </p>
+    <!-- this will be blue too -->
+    <p id="greenelement">This is a simple paragraph toh represent css selectors </p>
+    <div>
+        <!-- this will be blue too -->
+        <p id="purpleelement">This is a simple paragraph toh represent css selectors </p>
+        
+
+    </div>
+    <!-- to get desired colour we declare id in paragraph and create a element colour in style part -->
+    <!--  now we will look another case -->
+    <!-- in below case only identitfied redelement paragraph will get red-->
+    <p id="redelement">This is a simple paragraph toh represent css selectors </p>
+
+    <!-- we cen do  the same activivty using .class elemetn instead of #elementcolor -->
+    <p class="aqua bgbrown">this is coloured using class</p>
+    <!-- bgbrown is also declared above -->
+    <!-- also class keyword is used instead of id -->
+    <!-- # is used for id while . is used for class -->
+    <div>
+        <footer>this is a footer</footer>
+        <span>this is a span</span>
+    </div>
+    
+    
+</body>
+</html>
